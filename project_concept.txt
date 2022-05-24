@@ -1,0 +1,32 @@
+= 	Game States (start, running, paused, game_over):
+-	game states will be updated in some fps by timer interrupts.
+
+= 	3 buttons (handled by interrupts):
+-	when game state is in a menu screen ('start', 'paused' or 'game_over'),
+	the buttons should be used to interact with menu itens (up, down, select) and
+	when the game is running, the buttons should be used to fire and pause the game.
+	- 	btn0: up		/	fire_A
+	- 	btn1: down		/	fire_B
+	- 	btn2: select	/	pause
+	
+=	joystick (polled on each game state change):
+-	detect the direction (dx, dy) of movement to change the player position.
+
+=	Animation:
+-	a global variable should count the current frame number on a cyclic manner (count % limit)
+	to create bitmap animation on each game state change.
+	
+=	Objects (player, enemies, power ups, lasers, bosses, etc):
+-	all objects should be instantiated in the begining og the code with:
+	- integer position (x, y)
+	- visible state (on/off)
+	- other attributes such as hp, etc
+	this should be done to avoid running out of memory during the game and possibly crashing it...
+	
+=	Sound Effects (PWM):
+-	setup a PWM with 50% DC and change its frequency on each game state change
+	to form a sound effect.
+	
+=	Light Effects (SSI):
+-	setup SSI to handle the ws2812b (or equivalent) led strip to create light effects,
+	which should be updated each game state change.

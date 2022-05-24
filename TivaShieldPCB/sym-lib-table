@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name COM-09032)(type Legacy)(uri ${KIPRJMOD}/COM-09032/COM-09032.lib)(options "")(descr ""))
+  (lib (name PKM13EPYH4002-B0)(type Legacy)(uri ${KIPRJMOD}/PKM13EPYH4002-B0/PKM13EPYH4002-B0.lib)(options "")(descr ""))
+)

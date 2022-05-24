@@ -1,0 +1,3092 @@
+
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'html' -->
+<!-- FILE NAME SUGGESTIONS:
+   * html--node--101.html.twig
+   * html--node--%.html.twig
+   * html--node.html.twig
+   x html.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/gavias_kama/templates/page/html.html.twig' -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
+  <head> 
+    <meta charset="utf-8" />
+<meta name="title" content="Nokia 5110 LCD Pinout, Features, Uses Tips &amp; Datasheet" />
+<meta property="og:site_name" content="Components101" />
+<meta name="description" content="The Nokia 5110 module is commonly used with Arduino but it can also be used with any microcontroller that supports SPI communication." />
+<meta name="abstract" content="Nokia 5110 LCD Pin configuration" />
+<meta name="keywords" content="Nokia 5110 LCD pin diagram, how to use Nokia 5110 LCD, Nokia 5110 LCD datasheet" />
+<meta property="og:title" content="Nokia5110 LCD" />
+<meta property="og:description" content="Nokia5110 LCD" />
+<meta property="og:image" content="https://components101.comNokia 5110 LCD" />
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="/sites/default/files/componentfavicon_32.png" type="image/png" />
+<link rel="canonical" href="https://components101.com/displays/nokia-5110-lcd" />
+<link rel="shortlink" href="https://components101.com/node/101" />
+
+    
+    <title>Nokia 5110 LCD Pinout, Features, Uses Tips &amp; Datasheet</title>
+    <link rel="stylesheet" media="all" href="/core/modules/system/css/components/ajax-progress.module.css?qx5vzw" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/align.module.css?qx5vzw" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/autocomplete-loading.module.css?qx5vzw" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/fieldgroup.module.css?qx5vzw" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/container-inline.module.css?qx5vzw" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/clearfix.module.css?qx5vzw" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/details.module.css?qx5vzw" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/hidden.module.css?qx5vzw" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/item-list.module.css?qx5vzw" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/js.module.css?qx5vzw" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/nowrap.module.css?qx5vzw" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/position-container.module.css?qx5vzw" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/progress.module.css?qx5vzw" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/reset-appearance.module.css?qx5vzw" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/resize.module.css?qx5vzw" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/sticky-header.module.css?qx5vzw" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/system-status-counter.css?qx5vzw" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/system-status-report-counters.css?qx5vzw" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/system-status-report-general-info.css?qx5vzw" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/tabledrag.module.css?qx5vzw" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/tablesort.module.css?qx5vzw" />
+<link rel="stylesheet" media="all" href="/core/modules/system/css/components/tree-child.module.css?qx5vzw" />
+<link rel="stylesheet" media="all" href="/core/modules/views/css/views.module.css?qx5vzw" />
+<link rel="stylesheet" media="all" href="/modules/colorbox/styles/default/colorbox_style.css?qx5vzw" />
+<link rel="stylesheet" media="all" href="/modules/custom_module/css/welcome_wallpaper.css?qx5vzw" />
+<link rel="stylesheet" media="all" href="/modules/gavias_slider/vendor/slick/slick.css?qx5vzw" />
+<link rel="stylesheet" media="all" href="/modules/gavias_slider/vendor/slick/slick-theme.css?qx5vzw" />
+<link rel="stylesheet" media="all" href="/modules/gavias_slider/vendor/ytplayer/css/jquery.mb.YTPlayer.min.css?qx5vzw" />
+<link rel="stylesheet" media="all" href="/modules/gva_blockbuilder/assets/css/frontend.css?qx5vzw" />
+<link rel="stylesheet" media="all" href="//fonts.googleapis.com/css?family=Montserrat:400,500,700" />
+<link rel="stylesheet" media="all" href="//fonts.googleapis.com/css?family=Open+Sans:400,500,700" />
+<link rel="stylesheet" media="all" href="/themes/gavias_kama/css/font-awesome.css?qx5vzw" />
+<link rel="stylesheet" media="all" href="/themes/gavias_kama/css/icon.css?qx5vzw" />
+<link rel="stylesheet" media="all" href="/themes/gavias_kama/vendor/owl-carousel/assets/owl.carousel.min.css?qx5vzw" />
+<link rel="stylesheet" media="all" href="/themes/gavias_kama/vendor/owl-carousel/assets/owl.theme.default.min.css?qx5vzw" />
+<link rel="stylesheet" media="all" href="/themes/gavias_kama/vendor/magnific/magnific-popup.css?qx5vzw" />
+<link rel="stylesheet" media="all" href="/themes/gavias_kama/css/custom.css?qx5vzw" />
+<link rel="stylesheet" media="all" href="/themes/gavias_kama/vendor/gallery/style.css?qx5vzw" />
+<link rel="stylesheet" media="all" href="/themes/gavias_kama/css/skins/red/template.css?qx5vzw" />
+<link rel="stylesheet" media="all" href="/themes/gavias_kama/css/skins/red/bootstrap.css?qx5vzw" />
+
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/101","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","colorbox":{"opacity":"0.85","current":"{current} of {total}","previous":"\u00ab Prev","next":"Next \u00bb","close":"Close","maxWidth":"98%","maxHeight":"98%","fixed":true,"mobiledetect":true,"mobiledevicewidth":"480px"},"statistics":{"data":{"nid":"101"},"url":"\/core\/modules\/statistics\/statistics.php"},"gavias_blockbuilder":{"url_edit":"\/admin\/structure\/gavias_blockbuilder\/edit\/-----"},"ajaxTrustedUrl":{"\/search\/node":true},"layzy_load":"on","gavias_load_ajax_view":"\/custom\/gavias_hook\/ajax_view","user":{"uid":0,"permissionsHash":"098d2cb77f8ea881a607466b769ba5ec671ead1c1012234492e015cec6a7fb99"}}</script>
+
+<!--[if lte IE 8]>
+<script src="/core/assets/vendor/html5shiv/html5shiv.min.js?v=3.7.3"></script>
+<![endif]-->
+<script src="/core/assets/vendor/domready/ready.min.js?v=1.0.8"></script>
+<script src="/core/assets/vendor/jquery/jquery.min.js?v=3.2.1"></script>
+<script src="/core/assets/vendor/jquery/jquery-extend-3.4.0.js?v=3.2.1"></script>
+<script src="/core/misc/drupalSettingsLoader.js?v=8.7.7"></script>
+<script src="/core/misc/drupal.js?v=8.7.7"></script>
+<script src="/core/misc/drupal.init.js?v=8.7.7"></script>
+<script src="/themes/gavias_kama/vendor/jquery-migrate.min.js?v=8.7.7"></script>
+<script src="/themes/gavias_kama/js/bootstrap.js?v=8.7.7"></script>
+<script src="/themes/gavias_kama/js/imagesloader.min.js?v=8.7.7"></script>
+<script src="/themes/gavias_kama/vendor/jquery.easing.js?v=8.7.7"></script>
+<script src="/themes/gavias_kama/vendor/owl-carousel/owl.carousel.js?v=8.7.7"></script>
+<script src="/themes/gavias_kama/vendor/perfect-scrollbar.jquery.min.js?v=8.7.7"></script>
+<script src="/themes/gavias_kama/js/sidebar-sticky.js?v=8.7.7"></script>
+<script src="/themes/gavias_kama/vendor/waypoint.js?v=8.7.7"></script>
+<script src="/themes/gavias_kama/vendor/jquery.appear.js?v=8.7.7"></script>
+<script src="/themes/gavias_kama/vendor/count-to.js?v=8.7.7"></script>
+<script src="/themes/gavias_kama/vendor/masonry.pkgd.min.js?v=8.7.7"></script>
+<script src="/themes/gavias_kama/vendor/isotope.pkgd.min.js?v=8.7.7"></script>
+<script src="/themes/gavias_kama/vendor/jpreloader.min.js?v=8.7.7"></script>
+<script src="/themes/gavias_kama/vendor/jquery.unveil.js?v=8.7.7"></script>
+<script src="/themes/gavias_kama/vendor/magnific/jquery.magnific-popup.min.js?v=8.7.7"></script>
+<script src="/themes/gavias_kama/vendor/jquery.pjax.js?v=8.7.7"></script>
+<script src="/themes/gavias_kama/js/main.js?v=8.7.7"></script>
+
+    
+    
+
+    <link rel="stylesheet" href="https://components101.com/themes/gavias_kama/css/custom.css" media="screen" />
+    <link rel="stylesheet" href="https://components101.com/themes/gavias_kama/css/update.css" media="screen" />
+    
+    
+
+          <style class="customize"> .main-menu, ul.gva_menu{background: #c62020!important;} .main-menu ul.gva_menu > li > a{color: #ffffff!important;} .main-menu ul.gva_menu > li > a:hover{color: #e3e3e3!important;}#footer .footer-center{color: #ababab !important;}#footer .footer-center ul.menu > li a::after, .footer a{color: #999191!important;} .copyright{color: #8c8c8c !important;}.copyright a{color: $customize['copyright_color_link'] ?>!important;}</style>
+    
+     
+	 
+	 <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-105698825-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-105698825-1');
+</script>
+
+<script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+<script>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+</script>
+
+<script>
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/21034905/Components101_leaderboard', [728, 90], 'div-gpt-ad-1555342001530-0').addService(googletag.pubads());
+	googletag.defineSlot('/21805061584/CA_CircuitDigest', [300, 250], 'div-gpt-ad-1561528735888-0').addService(googletag.pubads());
+	googletag.defineSlot('/21034905/components101_billboard', [970, 250], 'div-gpt-ad-1577888984385-0').addService(googletag.pubads());
+	googletag.defineSlot('/21034905/components101_track_1', [1, 1], 'div-gpt-ad-1577889031982-0').addService(googletag.pubads());
+	googletag.defineSlot('/21034905/components101_welcome_banner', [640, 480], 'div-gpt-ad-1622010760286-0').addService(googletag.pubads());
+	googletag.defineSlot('/21034905/c101_wallpaper_banner_left', [120, 600], 'div-gpt-ad-1625818497950-0').addService(googletag.pubads());
+	googletag.defineSlot('/21034905/c101_wallpaper_banner_right', [120, 600], 'div-gpt-ad-1625818544655-0').addService(googletag.pubads());
+	googletag.defineSlot('/21034905/c101_billboard_bottom', [970, 250], 'div-gpt-ad-1627302449723-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.pubads().collapseEmptyDivs();
+    googletag.enableServices();
+  });
+</script>
+
+<script> window._peq = window._peq || []; window._peq.push(["init"]); </script>
+<script src="https://clientcdn.pushengage.com/core/b31cf866f50005584b4fd935539a00da.js" async></script>
+
+
+<script src="https://di.oemsecrets.com/js/distributor-inventory_0.2.7.min.js"></script>
+<link href="https://di.oemsecrets.com/css/distributor-inventory_0.0.4.min.css" rel="stylesheet">
+
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="300">
+<meta property="og:image:height" content="300">
+
+
+  </head>
+    <body class="layout-no-sidebars not-preloader boxed path-node node--type-blog-post">
+    <a href="#main-content" class="visually-hidden focusable">
+      Skip to main content
+    </a>
+    
+    
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	
+<div id="myModalwel" class="modal fade" data-keyboard="false" data-backdrop="static">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header" style="display:none">
+              <div class="blocksss">
+                <h5 class="modal-title">Continue to site >>></h5>
+              </div>
+            </div>
+            <div class="modal-body">
+    <!-- /21034905/components101_welcome_banner -->
+     <div id='div-gpt-ad-1622010760286-0' style='min-width: 640px; min-height: 480px;'>
+      <script>
+        googletag.cmd.push(function() { googletag.display('div-gpt-ad-1622010760286-0'); });
+      </script>
+    </div> 
+                 <!-- <img src="adsimage.png" class="img-responsive"> -->
+            </div>
+        </div>
+      </div>
+    </div>
+	</div>
+	
+	<IMG SRC="https://ad.doubleclick.net/ddm/trackimp/N30602.3444938BARNACLEROCKPROPER/B22228382.308365545;dc_trk_aid=500870123;dc_trk_cid=154375944;ord=[timestamp];dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ltd=?" BORDER="0" HEIGHT="1" WIDTH="1" ALT="Advertisement" style="display:block;">
+
+	
+	  <div id='div-gpt-ad-1625818497950-0' style='min-width: 120px; min-height: 600px; position: fixed; top:0px; right: 55%; margin: 0 540px 0 0;'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1625818497950-0'); });
+  </script>
+</div>
+
+
+
+  <div id='div-gpt-ad-1625818544655-0' style='min-width: 120px; min-height: 600px;position: fixed; top:0px;  margin: 0 0 0 540px; left: 56%;'>
+	<script>
+		googletag.cmd.push(function() { googletag.display('div-gpt-ad-1625818544655-0'); });
+	</script>
+</div>	
+	
+
+
+<style type="text/css">
+
+
+</style>
+<script type="text/javascript">
+  if(document.documentElement.clientWidth > 700){
+var time = 1;
+setTimeout(function(){
+
+if(document.getElementById('div-gpt-ad-1622010760286-0').style['display']!='none' && $('#myModalwel').find('img') && $('#div-gpt-ad-1622010760286-0').attr('data-google-query-id')){
+$('.modal-header').show();
+$('#myModalwel').modal("show");
+console.log("Hello world!");
+  }
+}, 3000);
+
+    $('.modal-header').click(function(){
+       $(".modal").remove();
+  $('.modal').modal('hide');
+  $('body').removeClass('modal-open');
+       $(".modal-backdrop" ).remove();
+
+    });
+ }
+
+</script>
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'off_canvas_page_wrapper' -->
+<!-- BEGIN OUTPUT from 'core/modules/system/templates/off-canvas-page-wrapper.html.twig' -->
+  <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'page' -->
+<!-- FILE NAME SUGGESTIONS:
+   * page--node--101.html.twig
+   * page--node--%.html.twig
+   * page--node--blog-post.html.twig
+   * page--node.html.twig
+   x page.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/gavias_kama/templates/page/page.html.twig' -->
+<div class="body-page">
+	    	    <header id="header" class="header-v3">
+  
+  <div class="topbar">
+  <div class="container">
+    <div class="row">
+      
+      <div class="topbar-left col-sm-6 col-xs-12 hidden-xs">
+                  
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'region' -->
+<!-- FILE NAME SUGGESTIONS:
+   * region--topbar.html.twig
+   x region.html.twig
+-->
+<!-- BEGIN OUTPUT from 'core/modules/system/templates/region.html.twig' -->
+  <div>
+    
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'block' -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--gavias-kama-mobilemenutopmenu.html.twig
+   * block--system-menu-block--mobile-menu---top-menu.html.twig
+   x block--system-menu-block.html.twig
+   * block--system.html.twig
+   * block.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/gavias_kama/templates/block/block--system-menu-block.html.twig' -->
+<nav role="navigation" aria-labelledby="-menu" class="block block-menu navigation menu--mobile-menu---top-menu">
+          
+  
+  <h2  class="visually-hidden block-title" id="-menu"><span>Top menu</span></h2>
+  
+  <div class="block-content">
+                 
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'menu__mobile_menu___top_menu' -->
+<!-- FILE NAME SUGGESTIONS:
+   * menu--mobile-menu---top-menu.html.twig
+   * menu--mobile-menu-.html.twig
+   x menu.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/gavias_kama/templates/navigation/menu.html.twig' -->
+
+              <ul class="gva_menu">
+        
+            <li  class="menu-item">
+        <a href="/about-us" data-drupal-link-system-path="node/117">About Us</a>
+        
+      </li>
+    
+            <li  class="menu-item">
+        <a href="/contact" data-drupal-link-system-path="contact">Contact</a>
+        
+      </li>
+        </ul>
+  
+
+
+<!-- END OUTPUT from 'themes/gavias_kama/templates/navigation/menu.html.twig' -->
+
+
+        </div>  
+</nav>
+
+<!-- END OUTPUT from 'themes/gavias_kama/templates/block/block--system-menu-block.html.twig' -->
+
+
+  </div>
+
+<!-- END OUTPUT from 'core/modules/system/templates/region.html.twig' -->
+
+
+              </div>
+
+      <div class="topbar-right col-sm-6 col-xs-12">
+        <div class="social-list">
+                      <a href="https://www.facebook.com/electronicscomponents101" rel="nofollow" target="_blank"><i class="fa fa-facebook"></i></a>
+           
+                      <a href="https://twitter.com/components101" rel="nofollow" target="_blank"><i class="fa fa-twitter-square"></i></a>
+           
+           
+           
+           
+           
+                      <a href="https://pinterest.com/components101" rel="nofollow" target="_blank"><i class="fa fa-pinterest"></i></a>
+           
+           
+           
+            
+            
+        </div>  
+      </div>
+    </div>
+  </div>  
+</div>
+
+    <div class="header-bottom gv-sticky-menu">
+      <div class="main-menu">
+        <div class="container">
+           <div class="row">
+              <div class="col-lg-2 col-md-2 col-xs-5">
+                                  
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'region' -->
+<!-- FILE NAME SUGGESTIONS:
+   * region--branding.html.twig
+   x region.html.twig
+-->
+<!-- BEGIN OUTPUT from 'core/modules/system/templates/region.html.twig' -->
+  <div>
+    
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'block' -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--gavias-kama-branding.html.twig
+   x block--system-branding-block.html.twig
+   * block--system.html.twig
+   * block.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/gavias_kama/templates/block/block--system-branding-block.html.twig' -->
+<div class="clearfix site-branding block block-system block-system-branding-block no-title">
+  
+    
+        <a href="/" title="Home" rel="home" class="site-branding-logo">
+        
+        <img src="/sites/default/files/components101_logo_1.png" alt="Home" />
+        
+    </a>
+    </div>
+
+<!-- END OUTPUT from 'themes/gavias_kama/templates/block/block--system-branding-block.html.twig' -->
+
+
+  </div>
+
+<!-- END OUTPUT from 'core/modules/system/templates/region.html.twig' -->
+
+
+                    
+              </div>
+              <div class="col-lg-10 col-md-10 col-xs-7 area-main-menu">
+                <div class="area-inner menu-hover">
+                  <div class="gva-offcanvas-inner">
+                    <div class="close-offcanvas hidden-lg hidden-md"><a><i class="fa fa-times"></i></a></div>
+                                          
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'region' -->
+<!-- FILE NAME SUGGESTIONS:
+   * region--main-menu.html.twig
+   x region.html.twig
+-->
+<!-- BEGIN OUTPUT from 'core/modules/system/templates/region.html.twig' -->
+  <div>
+    
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'block' -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--gavias-kama-mainnavigation.html.twig
+   * block--system-menu-block--main.html.twig
+   x block--system-menu-block.html.twig
+   * block--system.html.twig
+   * block.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/gavias_kama/templates/block/block--system-menu-block.html.twig' -->
+<nav role="navigation" aria-labelledby="-menu" class="block block-menu navigation menu--main">
+          
+  
+  <h2  class="visually-hidden block-title" id="-menu"><span>Main navigation</span></h2>
+  
+  <div class="block-content">
+                 
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'menu__main' -->
+<!-- FILE NAME SUGGESTIONS:
+   x menu--main.html.twig
+   x menu--main.html.twig
+   * menu.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/gavias_kama/templates/navigation/menu--main.html.twig' -->
+
+<div class="gva-navigation">
+
+              <ul class="clearfix gva_menu gva_menu_main">
+                                      <li  class="menu-item">
+        <a href="/latest-news">
+                    New Products
+            
+        </a>
+          
+              </li>
+                                  <li  class="menu-item">
+        <a href="/articles">
+                    Design Tips
+            
+        </a>
+          
+              </li>
+                                  <li  class="menu-item menu-item--expanded">
+        <a href="/ics">
+                    ICs
+                      <span class="icaret nav-plus nav-minus fa fa-angle-down"></span>
+            
+        </a>
+          
+                                <ul class="menu sub-menu">
+                                      <li  class="menu-item">
+        <a href="https://components101.com/power-ics">
+                    Power ICs
+            
+        </a>
+          
+              </li>
+                                  <li  class="menu-item">
+        <a href="https://components101.com/analog-ics">
+                    Analog ICs
+            
+        </a>
+          
+              </li>
+                                  <li  class="menu-item">
+        <a href="https://components101.com/digital-ics">
+                    Digital ICs
+            
+        </a>
+          
+              </li>
+        </ul>
+  
+              </li>
+                                  <li  class="menu-item menu-item--expanded">
+        <a href="">
+                    Passive
+                      <span class="icaret nav-plus nav-minus fa fa-angle-down"></span>
+            
+        </a>
+          
+                                <ul class="menu sub-menu">
+                                      <li  class="menu-item">
+        <a href="/capacitors">
+                    Capacitors
+            
+        </a>
+          
+              </li>
+                                  <li  class="menu-item">
+        <a href="/diodes">
+                    Diodes
+            
+        </a>
+          
+              </li>
+                                  <li  class="menu-item">
+        <a href="/resistors">
+                    Resistors
+            
+        </a>
+          
+              </li>
+                                  <li  class="menu-item">
+        <a href="https://components101.com/inductors">
+                    Inductors
+            
+        </a>
+          
+              </li>
+                                  <li  class="menu-item">
+        <a href="/switches">
+                    Switches
+            
+        </a>
+          
+              </li>
+                                  <li  class="menu-item">
+        <a href="/transformers">
+                    Transformers
+            
+        </a>
+          
+              </li>
+        </ul>
+  
+              </li>
+                                  <li  class="menu-item menu-item--expanded">
+        <a href="">
+                    Power
+                      <span class="icaret nav-plus nav-minus fa fa-angle-down"></span>
+            
+        </a>
+          
+                                <ul class="menu sub-menu">
+                                      <li  class="menu-item">
+        <a href="https://components101.com/transistors">
+                    Transistors
+            
+        </a>
+          
+              </li>
+                                  <li  class="menu-item">
+        <a href="/igbt">
+                    IGBT
+            
+        </a>
+          
+              </li>
+                                  <li  class="menu-item">
+        <a href="/mosfets">
+                    MOSFET
+            
+        </a>
+          
+              </li>
+                                  <li  class="menu-item">
+        <a href="/triacs">
+                    TRIAC
+            
+        </a>
+          
+              </li>
+                                  <li  class="menu-item">
+        <a href="/optocouplers">
+                    Optocouplers
+            
+        </a>
+          
+              </li>
+                                  <li  class="menu-item">
+        <a href="/regulators">
+                    Regulators
+            
+        </a>
+          
+              </li>
+                                  <li  class="menu-item">
+        <a href="https://components101.com/power-ics">
+                    Power ICs &amp; Modules
+            
+        </a>
+          
+              </li>
+        </ul>
+  
+              </li>
+                                  <li  class="menu-item menu-item--expanded">
+        <a href="">
+                    Embedded
+                      <span class="icaret nav-plus nav-minus fa fa-angle-down"></span>
+            
+        </a>
+          
+                                <ul class="menu sub-menu">
+                                      <li  class="menu-item">
+        <a href="/development-boards">
+                    Development Boards
+            
+        </a>
+          
+              </li>
+                                  <li  class="menu-item">
+        <a href="/microcontrollers">
+                    Microcontrollers
+            
+        </a>
+          
+              </li>
+                                  <li  class="menu-item">
+        <a href="/sensors">
+                    Sensors
+            
+        </a>
+          
+              </li>
+                                  <li  class="menu-item">
+        <a href="/displays">
+                    Displays
+            
+        </a>
+          
+              </li>
+                                  <li  class="menu-item">
+        <a href="/wireless">
+                    Wireless
+            
+        </a>
+          
+              </li>
+        </ul>
+  
+              </li>
+                                  <li  class="menu-item menu-item--expanded">
+        <a href="">
+                    Actuators
+                      <span class="icaret nav-plus nav-minus fa fa-angle-down"></span>
+            
+        </a>
+          
+                                <ul class="menu sub-menu">
+                                      <li  class="menu-item">
+        <a href="/motors">
+                    Motors
+            
+        </a>
+          
+              </li>
+        </ul>
+  
+              </li>
+                                  <li  class="menu-item menu-item--expanded">
+        <a href="">
+                    More..
+                      <span class="icaret nav-plus nav-minus fa fa-angle-down"></span>
+            
+        </a>
+          
+                                <ul class="menu sub-menu">
+                                      <li  class="menu-item">
+        <a href="/connectors">
+                    Connectors
+            
+        </a>
+          
+              </li>
+                                  <li  class="menu-item">
+        <a href="/modules2">
+                    Modules
+            
+        </a>
+          
+              </li>
+                                  <li  class="menu-item">
+        <a href="/batteries">
+                    Batteries
+            
+        </a>
+          
+              </li>
+                                  <li  class="menu-item">
+        <a href="/cables">
+                    Cables
+            
+        </a>
+          
+              </li>
+                                  <li  class="menu-item">
+        <a href="/misc">
+                    Misc.
+            
+        </a>
+          
+              </li>
+        </ul>
+  
+              </li>
+        </ul>
+  
+
+</div>
+
+<!-- END OUTPUT from 'themes/gavias_kama/templates/navigation/menu--main.html.twig' -->
+
+
+        </div>  
+</nav>
+
+<!-- END OUTPUT from 'themes/gavias_kama/templates/block/block--system-menu-block.html.twig' -->
+
+
+  </div>
+
+<!-- END OUTPUT from 'core/modules/system/templates/region.html.twig' -->
+
+
+                      
+                                      </div>
+                  
+                  <div id="menu-bar" class="menu-bar mobile hidden-lg hidden-md">
+                    <span class="one"></span>
+                    <span class="two"></span>
+                    <span class="three"></span>
+                  </div>
+
+                                      <div class="menu-another hidden-xs hidden-sm">
+                      <div id="menu-bar-another" class="menu-bar">
+                        <span class="fa fa-user" style="color: white; margin-top: 8px; height: 0px;"></span>
+					<span class="one" style="display: none;"></span>
+                    <span class="two" style="display: none;"></span>
+                    <span class="three" style="display: none;"></span>
+                      </div>
+                      <div class="content-inner">
+                        
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'region' -->
+<!-- FILE NAME SUGGESTIONS:
+   * region--menu-another.html.twig
+   x region.html.twig
+-->
+<!-- BEGIN OUTPUT from 'core/modules/system/templates/region.html.twig' -->
+  <div>
+    
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'block' -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--gavias-kama-account-menu.html.twig
+   * block--system-menu-block--account.html.twig
+   x block--system-menu-block.html.twig
+   * block--system.html.twig
+   * block.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/gavias_kama/templates/block/block--system-menu-block.html.twig' -->
+<nav role="navigation" aria-labelledby="block-gavias-kama-account-menu-menu" id="block-gavias-kama-account-menu" class="block block-menu navigation menu--account">
+          
+  
+  <h2  class="visually-hidden block-title" id="block-gavias-kama-account-menu-menu"><span>User account menu</span></h2>
+  
+  <div class="block-content">
+                 
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'menu__account' -->
+<!-- FILE NAME SUGGESTIONS:
+   * menu--account.html.twig
+   x menu.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/gavias_kama/templates/navigation/menu.html.twig' -->
+
+              <ul class="gva_menu">
+        
+            <li  class="menu-item">
+        <a href="/user/login" data-drupal-link-system-path="user/login">Log in</a>
+        
+      </li>
+    
+            <li  class="menu-item">
+        <a href="/user/register" data-drupal-link-system-path="user/register">Register</a>
+        
+      </li>
+        </ul>
+  
+
+
+<!-- END OUTPUT from 'themes/gavias_kama/templates/navigation/menu.html.twig' -->
+
+
+        </div>  
+</nav>
+
+<!-- END OUTPUT from 'themes/gavias_kama/templates/block/block--system-menu-block.html.twig' -->
+
+
+  </div>
+
+<!-- END OUTPUT from 'core/modules/system/templates/region.html.twig' -->
+
+
+                      </div>
+                    </div>  
+                  
+                                      <div class="gva-search-region search-region">
+                      <span class="icon"><i class="fa fa-search"></i></span>
+                      <div class="search-content">
+                        <a class="close"><i class="fa fa-times"></i></a> 
+                        <div class="content-inner"> 
+                          
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'region' -->
+<!-- FILE NAME SUGGESTIONS:
+   * region--search.html.twig
+   x region.html.twig
+-->
+<!-- BEGIN OUTPUT from 'core/modules/system/templates/region.html.twig' -->
+  <div>
+    
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'block' -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--searchform-2.html.twig
+   x block--search-form-block.html.twig
+   * block--search.html.twig
+   * block.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/gavias_kama/templates/block/block--search-form-block.html.twig' -->
+<div class="search-block-form block block-search container-inline" data-drupal-selector="search-block-form" role="search">
+  
+    
+    <div class="content container-inline">
+        
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'form' -->
+<!-- FILE NAME SUGGESTIONS:
+   x form--search-block-form.html.twig
+   * form.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/gavias_kama/templates/block/form--search-block-form.html.twig' -->
+<form action="/search/node" method="get" id="search-block-form" accept-charset="UTF-8" class="search-form search-block-form">
+  
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'form_element' -->
+<!-- BEGIN OUTPUT from 'core/modules/system/templates/form-element.html.twig' -->
+<div class="js-form-item form-item js-form-type-search form-item-keys js-form-item-keys form-no-label">
+      
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'form_element_label' -->
+<!-- BEGIN OUTPUT from 'core/modules/system/templates/form-element-label.html.twig' -->
+<label for="edit-keys" class="visually-hidden">Search</label>
+<!-- END OUTPUT from 'core/modules/system/templates/form-element-label.html.twig' -->
+
+
+        
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'input__search' -->
+<!-- FILE NAME SUGGESTIONS:
+   * input--search.html.twig
+   x input.html.twig
+-->
+<!-- BEGIN OUTPUT from 'core/modules/system/templates/input.html.twig' -->
+<input title="Enter the terms you wish to search for." data-drupal-selector="edit-keys" type="search" id="edit-keys" name="keys" value="" size="15" maxlength="128" class="form-search" />
+
+<!-- END OUTPUT from 'core/modules/system/templates/input.html.twig' -->
+
+
+        </div>
+
+<!-- END OUTPUT from 'core/modules/system/templates/form-element.html.twig' -->
+
+
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'container' -->
+<!-- BEGIN OUTPUT from 'core/modules/system/templates/container.html.twig' -->
+<div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper" id="edit-actions--2">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'input__submit' -->
+<!-- FILE NAME SUGGESTIONS:
+   * input--submit.html.twig
+   x input.html.twig
+-->
+<!-- BEGIN OUTPUT from 'core/modules/system/templates/input.html.twig' -->
+<input class="search-form__submit button js-form-submit form-submit" data-drupal-selector="edit-submit" type="submit" id="edit-submit--2" value="Search" />
+
+<!-- END OUTPUT from 'core/modules/system/templates/input.html.twig' -->
+
+</div>
+
+<!-- END OUTPUT from 'core/modules/system/templates/container.html.twig' -->
+
+
+</form>
+
+<!-- END OUTPUT from 'themes/gavias_kama/templates/block/form--search-block-form.html.twig' -->
+
+
+  
+  </div>
+</div>
+
+<!-- END OUTPUT from 'themes/gavias_kama/templates/block/block--search-form-block.html.twig' -->
+
+
+  </div>
+
+<!-- END OUTPUT from 'core/modules/system/templates/region.html.twig' -->
+
+
+                        </div>
+                      </div>  
+                    </div>
+                                   
+                </div>   
+              </div>
+           </div>
+        </div>
+      </div>
+    </div>
+   
+</header>
+<div class="ad970-wrapper" style ="background-color: #F5F5F5; padding-top: 20px; padding-bottom: 20px;"> 
+<!-- /21034905/components101_billboard -->
+<div id='div-gpt-ad-1577888984385-0' style='width: 970px; height: 250px; margin-left: auto; margin-right: auto;'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1577888984385-0'); });
+  </script>
+</div>
+</div>
+
+	
+
+
+	
+
+	
+   
+ 
+
+  <div class="help show">
+    <div class="container">
+      <div class="control-panel"><i class="fa fa-cogs"></i></div>
+      <div class="content-inner">
+        
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'region' -->
+<!-- FILE NAME SUGGESTIONS:
+   * region--help.html.twig
+   x region.html.twig
+-->
+<!-- BEGIN OUTPUT from 'core/modules/system/templates/region.html.twig' -->
+
+<!-- END OUTPUT from 'core/modules/system/templates/region.html.twig' -->
+
+
+      </div>
+    </div>
+  </div>
+
+<div class="clearfix"></div>
+
+
+<div class="clearfix"></div>
+
+	<div role="main" class="main main-page">	
+		<div id="content" class="content content-full">
+			<div class="container">	
+				
+<div class="content-main-inner">
+	<div class="row">
+		
+					
+						 				 		
+							
+       
+
+		<div id="page-main-content" class="main-content col-xs-12 col-md-8 sb-r ">
+
+			<div class="main-content-inner">
+				
+				
+									<div class="content-main">
+						
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'region' -->
+<!-- FILE NAME SUGGESTIONS:
+   * region--content.html.twig
+   x region.html.twig
+-->
+<!-- BEGIN OUTPUT from 'core/modules/system/templates/region.html.twig' -->
+  <div>
+    <div data-drupal-messages-fallback class="hidden"></div>
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'block' -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--gavias-kama-content.html.twig
+   * block--system-main-block.html.twig
+   * block--system.html.twig
+   x block.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/gavias_kama/templates/block/block.html.twig' -->
+<div id="block-gavias-kama-content" class="block block-system block-system-main-block no-title">
+  
+    
+      <div class="content block-content">
+      
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'node' -->
+<!-- FILE NAME SUGGESTIONS:
+   * node--101--full.html.twig
+   * node--101.html.twig
+   * node--blog-post--full.html.twig
+   * node--blog-post.html.twig
+   * node--full.html.twig
+   * node.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/gavias_kama/templates/node/node--blog_post.html.twig' -->
+
+<!-- Start Display article for teaser page -->
+<!-- Start Display article for detail page -->
+
+<article data-history-node-id="101" role="article" about="/displays/nokia-5110-lcd" class="node node-detail node--type-blog-post node--view-mode-full clearfix">
+  <div class="post-block article-detail">
+      
+    <div class="post-thumbnail post-">
+              
+        
+    </div>
+
+    <div class="post-content">
+      <div></div>
+        
+           <h1 class="post-title">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   * field--node--title--blog-post.html.twig
+   x field--node--title.html.twig
+   * field--node--blog-post.html.twig
+   * field--title.html.twig
+   * field--string.html.twig
+   * field.html.twig
+-->
+<!-- BEGIN OUTPUT from 'core/modules/node/templates/field--node--title.html.twig' -->
+<span>Nokia5110 LCD</span>
+
+<!-- END OUTPUT from 'core/modules/node/templates/field--node--title.html.twig' -->
+
+</h1>
+                 
+<div class="post-meta margin-bottom-20">
+<span class="post-created">28 December 2017</span><span class="space">&nbsp;-&nbsp;</span><span class="post-comment">0 Comments</span>
+<a data-sumome-share-id=7dbd74c8-5c20-4320-bea6-009c92c015fd></a>
+</div>
+      
+      
+	  
+	      <div class="gallery-wrap">
+    <div id="bk-gallery-slider" class="flexslider">
+      <ul class="slides" style="display:inline-flex; padding-left:0px; margin-left:0px;" >
+	  
+   <ul style="border-right: 3px solid #EDEEE9;padding-left:0px; margin-left:0px;">
+        
+        							 <a href="/sites/default/files/components/Nokia5110-LCD.jpg" class="colorbox cboxElement" data-colorbox-gallery="gallery-beforeafter" title="Nokia 5110 LCD" data-source="/sites/default/files/components/Nokia5110-LCD.jpg" target="_blank"> <img width="390px" src="/sites/default/files/components/Nokia5110-LCD.jpg" class="" alt="Nokia 5110 LCD" /></a>
+      </ul>
+              <ul>
+        
+        							 <a class="colorbox cboxElement" data-colorbox-gallery="gallery-beforeafter" title="Nokia 5110 LCD Pinout" data-source="/sites/default/files/component_pin/Nokia-5110-LCD-Pinout.png" href="/sites/default/files/component_pin/Nokia-5110-LCD-Pinout.png" target="_blank"><img width="390px" src="/sites/default/files/component_pin/Nokia-5110-LCD-Pinout.png" class="" alt="Nokia 5110 LCD Pinout" /></a>
+      </ul>
+       </ul>
+	  <ul class="slides" style="display:inline-flex;">
+	  <ul style = "width: 398px; height: 40px; background-color: #EDEEE9; padding-top:8px; margin-left: -35px;">
+	  			<center><b>Nokia 5110 LCD</b></center>
+
+	  </ul>
+	  <ul style = "width: 398px; height: 40px; background-color: #EDEEE9; padding-top:8px; margin-left: -35px;">
+	  			<center> <b>Nokia 5110 LCD Pinout </b></center>
+
+	  </ul>
+	  </ul>
+	</div>
+	</div>
+<!--	<p style = "font-size: 10px;">[Click the image to enlarge it]</p> -->
+	
+<div class="ad728-wrapper" style="margin-top:12px;">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Components101_Header_Ads -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-4104019148699772"
+     data-ad-slot="4028306127"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<div class="ad300-wrapper" style="margin-top:12px;">
+<!-- Components101_Boombox -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:250px"
+     data-ad-client="ca-pub-4104019148699772"
+     data-ad-slot="8961579352"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+	
+      <div class="node__content clearfix">
+	  
+									
+									<h3>Pin Configuration:</h3>
+
+<table>
+	<tbody>
+		<tr>
+			<td>
+			<p><strong>Pin No:</strong></p>
+			</td>
+			<td>
+			<p><strong>Pin Name:</strong></p>
+			</td>
+			<td>
+			<p><strong>Description</strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>1</p>
+			</td>
+			<td>
+			<p>Reset</p>
+			</td>
+			<td>
+			<p>This pin resets the module. It an active low pin (resets when 0V is provided)</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>2</p>
+			</td>
+			<td>
+			<p>Chip Enable (CE)</p>
+			</td>
+			<td>
+			<p>This pin is made low (0V) to select this particular display when more than one SPI peripherals are used.</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>3</p>
+			</td>
+			<td>
+			<p>Data/Command (DC)</p>
+			</td>
+			<td>
+			<p>This pin is used to switch between Data mode (high) and Command mode (low)</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>4</p>
+			</td>
+			<td>
+			<p>Serial Input (DIN)</p>
+			</td>
+			<td>
+			<p>This is the input pin (MOSI) through which serial instructions are sent</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>5</p>
+			</td>
+			<td>
+			<p>Clock (CLK)</p>
+			</td>
+			<td>
+			<p>All SPI modules require a common clock, this clock source is supplied to this pin</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>6</p>
+			</td>
+			<td>
+			<p>Power (Vcc)</p>
+			</td>
+			<td>
+			<p>This pin is used to power the display the supply voltage is from 2.7V to 3.3V</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>7</p>
+			</td>
+			<td>
+			<p>Back Light (BL)</p>
+			</td>
+			<td>
+			<p>This pin powers the backlight of the display (3.3V maximum).</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>8</p>
+			</td>
+			<td>
+			<p>Ground (Gnd)</p>
+			</td>
+			<td>
+			<p>Connects to the ground of the circuit.</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+
+									<h3>&nbsp;</h3>
+
+
+									<h3>Features of Nokia5110 LCD module:</h3>
+
+<ul>
+	<li>Operating Voltage is 2.7V to 3.3V</li>
+	<li>Current consumption is 6mA</li>
+	<li>Consists of 84 rows and 84 columns (84×48) monochrome pixels &nbsp;</li>
+	<li>Works using SPI interface</li>
+	<li>Consists of Philips PCD8544 interface chip for easy interfacing&nbsp;</li>
+	<li>Can be easily interfaced with Arduino</li>
+	<li>Supports decent graphics of bitmap images</li>
+	<li>Available in Green and Blue Backlight</li>
+</ul>
+
+<p>&nbsp;</p>
+
+
+									<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Components101_Boombox_Bottom -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:250px"
+     data-ad-client="ca-pub-4104019148699772"
+     data-ad-slot="6274162917"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script><h3>Alternative Display Modules:</h3>
+
+<p><a href="16×2 LCD Display">16×2 LCD Display</a>, Dot Matrix LED Display, <a href="https://components101.com/7-segment-display-pinout-working-datasheet">7-Segment LED Display</a>, OLED Display, TFT LCD Screen Display</p>
+
+<p>&nbsp;</p>
+
+		
+									<h3>Where to use Nokia 5110 Display module:</h3>
+
+<p>As the name suggests this module was originally developed to be used with the iconic Nokia 5110 mobile phone. So it is capable of displaying alphanumeric characters, draw lines and other shapes and even displays a bitmap image. All this is possible because of its (84×48) monochrome pixels.</p>
+
+<p>The module comes with the PCD8544 interface IC which makes this module easy to use with low-level microcontrollers. It communicates through SPI protocol and hence does not require more pins. The module also has a readily available library for Arduino which makes it ideal even for novice programmers.</p>
+
+<p>So if you are looking for a display that is better than the standard 16*2 LCD to showcase some decent graphics or custom characters then this display might be the right choice for you.</p>
+
+<p>&nbsp;</p>
+
+
+									<h3>How to use Nokia 5110 Display module:</h3>
+
+<p>The Nokia 5110 module is commonly used with Arduino but it can also be used with any microcontroller that supports SPI communication. The module works on 3.3V and hence all the pins are only 3.3V tolerant according to the datasheet. So if you are using a 5V microcontroller (which most of us do) then it is recommended to use a logic level shifter like a potential divider to access the SPI pins of the display module.</p>
+
+<p>The graphical LCD shown above is from spark fun, and hence you can find the soldering pad sets on both on top and to the bottom of the LCD of which we can use any desired set. However you can also find many clones in the market with pads on only one side, but still, they have the same pinouts and same functionality so you need not worry about the difference. All clones have the same dimensions (1.72’ × 1.72’) with 6 input pins.</p>
+
+<p>You can easily <a href="https://circuitdigest.com/microcontroller-projects/nokia5110-graphical-lcd-arduino-interfacing">interface Nokia 5110 module with Arduino</a> by following the link and using the readily available libraries. If you are planning to interface with other microcontrollers then you should read through the PCD8544 datasheet to know how to access its registers through SPI.</p>
+
+<p>&nbsp;</p>
+
+
+									<h3>Applications:</h3>
+
+<ul>
+	<li>Can be used to display alphanumeric characters and bitmap images</li>
+	<li>Used in application where fancy graphics are required</li>
+	<li>Requires only a maximum of 5 pins to operate hence I/O friendly</li>
+	<li>Comes with a backlight and hence can be used even in darker environment</li>
+	<li>Can be used to create retro games using microcontrollers</li>
+	<li>Graphics are decent enough to create a basic UI</li>
+</ul>
+
+<p>&nbsp;</p>
+
+
+									<h3>2D-Model of Nokia 5110 Display module:</h3>
+
+<p>Whether you are designing a PCB for this module or&nbsp;3D printing a casing for this module the below 2D model would give you a helping hand.</p>
+
+<p><img alt=" Nokia 5110 LCD 2D model" data-entity-type="file" data-entity-uuid="9b52c4de-a0cf-4bad-a25c-7d4eb6be777c" src="/sites/default/files/inline-images/Nokia-5110-LCD-2D-model.jpg" /></p>
+
+				  
+             </div>
+
+
+
+
+
+
+	  <!-- custom added to show datasheet --> 
+	         <div style="padding: 10px; border: 1px solid #C2C4C5;">
+<center>
+<span style="font-size:20px;"><strong>
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   * field--node--field-component-datasheet--blog-post.html.twig
+   * field--node--field-component-datasheet.html.twig
+   * field--node--blog-post.html.twig
+   * field--field-component-datasheet.html.twig
+   * field--file.html.twig
+   x field.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/gavias_kama/templates/fields/field.html.twig' -->
+
+  <div class="field field--name-field-component-datasheet field--type-file field--label-above">
+    <div class="field__label">Component Datasheet</div>
+              <div class="field__item">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'file_link' -->
+<!-- BEGIN OUTPUT from 'core/modules/file/templates/file-link.html.twig' -->
+<span class="file file--mime-application-pdf file--application-pdf"><a href="https://components101.com/sites/default/files/component_datasheet/Nokia%205110%20LCD.pdf" target="_blank">Nokia5110 LCD Datasheet</a></span>
+
+<!-- END OUTPUT from 'core/modules/file/templates/file-link.html.twig' -->
+
+</div>
+          </div>
+
+<!-- END OUTPUT from 'themes/gavias_kama/templates/fields/field.html.twig' -->
+
+</strong></span>
+</center>
+
+</div>
+
+	
+      <div class="post-tags clearfix">
+	  <div class="content block-content">
+<div><div class="tags-list js-view-dom-id-ff96c674ec923312aca7eb3b0a461878855b595043911b46a04f592f71423738" style="font-size: 17px; font-weight: 400px; margin-left: -50px;">
+<div class="item-list">
+<ul>
+<div class="views-field views-field-name" style="margin-left: 10px;"><h3>Tags</h3><span class="field-content">
+        </span>
+		</ul>
+</div>
+</div>
+</div></div>
+      </div>  
+
+<!-- Begin Mailchimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{border:2px solid #dadada; clear:left; font:14px Helvetica,Arial,sans-serif; margin-top: 20px; }
+</style>
+<div id="mc_embed_signup">
+<form action="https://components101.us19.list-manage.com/subscribe/post?u=7831027c963ad1778e5688a40&amp;id=c04f684e84" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+		<h3 style="font-weight:500;margin: 10px 0; text-align: center;">Get Our Weekly Newsletter!</h3>
+<p style="text-align: center; margin-bottom:20px;">Subscribe to stay updated with industry's latest Electronics components and news</p>
+<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+<div class="mc-field-group">
+	<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+</label>
+	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+</div>
+<div class="mc-field-group">
+	<label for="mce-FNAME">Name </label>
+	<input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+</div>
+	<div id="mce-responses" class="clear">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
+	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_7831027c963ad1778e5688a40_c04f684e84" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+    </div>
+</form>
+</div>
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+<!--End mc_embed_signup--> 
+
+<div class="related-posts margin-top-30"> 
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-4104019148699772"
+     data-ad-slot="4060781436"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+		
+      </div>
+	  <br/>
+	  
+  <!-- showing views count - so commented   -->	
+ <!-- <h2 class="block-title">Comments</h2> -->	
+	
+    </div>
+
+  </div>
+  
+  
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   * field--node--field-blog-comments--blog-post.html.twig
+   * field--node--field-blog-comments.html.twig
+   * field--node--blog-post.html.twig
+   * field--field-blog-comments.html.twig
+   x field--comment.html.twig
+   * field.html.twig
+-->
+<!-- BEGIN OUTPUT from 'core/modules/comment/templates/field--comment.html.twig' -->
+<section>
+  
+  
+
+  
+</section>
+
+<!-- END OUTPUT from 'core/modules/comment/templates/field--comment.html.twig' -->
+
+
+  <br/>
+
+</article>
+
+<!-- End Display article for detail page -->
+
+
+
+<!-- END OUTPUT from 'themes/gavias_kama/templates/node/node--blog_post.html.twig' -->
+
+
+    </div>
+  </div>
+
+<!-- END OUTPUT from 'themes/gavias_kama/templates/block/block.html.twig' -->
+
+
+  </div>
+
+<!-- END OUTPUT from 'core/modules/system/templates/region.html.twig' -->
+
+
+					</div>
+				
+							</div>
+
+		</div>
+
+		<!-- Sidebar Left -->
+				<!-- End Sidebar Left -->
+
+		<!-- Sidebar Right -->
+					
+							 
+
+			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 sidebar sidebar-right theiaStickySidebar">
+				<div class="sidebar-inner">
+					
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'region' -->
+<!-- FILE NAME SUGGESTIONS:
+   * region--sidebar-right.html.twig
+   x region.html.twig
+-->
+<!-- BEGIN OUTPUT from 'core/modules/system/templates/region.html.twig' -->
+  <div>
+    
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'block' -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--views-block---re-sidebar-widgets-block-on-sidebar-fashion-news-2.html.twig
+   * block--views-block---re-sidebar-widgets-block-on-sidebar-fashion-news.html.twig
+   * block--views-block.html.twig
+   * block--views.html.twig
+   x block.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/gavias_kama/templates/block/block.html.twig' -->
+<div class="views-element-container block block-views block-views-block-re-sidebar-widgets-block-on-sidebar-fashion-news">
+  
+      <h2 class="block-title" ><span></span></h2>
+    
+      <div class="content block-content">
+      
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'container' -->
+<!-- BEGIN OUTPUT from 'core/modules/system/templates/container.html.twig' -->
+<div>
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view' -->
+<!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view.html.twig' -->
+<div class="js-view-dom-id-8596e08d88077fd3dbb417c94b976fbe4ac3719f49bf4e70801ecfd582566606">
+  
+  
+  
+
+      <header>
+      <span><img src="/sites/default/files/Digi-key-featured.png" /></span>
+
+<div id="div-gpt-ad-1577889031982-0">
+  <script>
+<!--//--><![CDATA[// ><!--
+
+<!--//--><![CDATA[// ><!--
+
+    googletag.cmd.push(function() { googletag.display("div-gpt-ad-1577889031982-0"); });
+  
+//--><!]]]]><![CDATA[>
+
+//--><!]]>
+</script></div>
+    </header>
+  
+  
+  
+
+  
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view_gvagrid' -->
+<!-- BEGIN OUTPUT from 'modules/gavias_view/templates/views-view-gvagrid.html.twig' -->
+<div class="gva-view-grid">
+   
+  
+  <div class="gva-view-grid-inner lg-block-grid-1 md-block-grid-1 sm-block-grid-1 xs-block-grid-1">
+
+            <div class="item-columns">
+          <div>
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view_fields' -->
+<!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-fields.html.twig' -->
+
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view_field' -->
+<!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+<div class="post-block small">
+      <div class="post-image">
+            <a href="https://bit.ly/3zTibwM" target="_blank">
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+<img src="" width="150" height="100" alt="High Power TVS Diodes for Bidirectional Protection" typeof="Image" data-src="/sites/default/files/styles/image_150x100/public/advertisements/tdk-b74121g0050m060-b74111g0050m060-tvs-diodes-200.jpeg?itok=rHtUoh-d" class="unveil-image" />
+
+
+
+
+
+
+
+
+
+
+
+</a>
+      </div>
+      <div class="post-content">
+             <div class="post-title"> <a href="https://bit.ly/3zTibwM" target="_blank">High Power TVS Diodes for Bidirectional Protection</a> </div>
+              <div class="post-meta"><span class="post-created "></span></div>
+             <div class="post-body"><p>TDK offers extremely small TVS diodes for highly effective ESD protection</p></div>
+       </div>
+</div>
+<!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+
+<!-- END OUTPUT from 'core/modules/views/templates/views-view-fields.html.twig' -->
+
+</div>
+        </div>
+            <div class="item-columns">
+          <div>
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view_fields' -->
+<!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-fields.html.twig' -->
+
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view_field' -->
+<!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+<div class="post-block small">
+      <div class="post-image">
+            <a href="https://bit.ly/3xaX6Mp" target="_blank">
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+<img src="" width="150" height="100" alt="WE-STAR-TEC Cable Ferrites" typeof="Image" data-src="/sites/default/files/styles/image_150x100/public/advertisements/westar-200.jpeg?itok=ue9Mlfkq" class="unveil-image" />
+
+
+
+
+
+
+
+
+
+
+
+</a>
+      </div>
+      <div class="post-content">
+             <div class="post-title"> <a href="https://bit.ly/3xaX6Mp" target="_blank">WE-STAR-TEC Cable Ferrites</a> </div>
+              <div class="post-meta"><span class="post-created "></span></div>
+             <div class="post-body"><p>Würth Elektronik WE-STAR-TEC Cable Ferrites with Safety Key Technology</p></div>
+       </div>
+</div>
+<!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+
+<!-- END OUTPUT from 'core/modules/views/templates/views-view-fields.html.twig' -->
+
+</div>
+        </div>
+            <div class="item-columns">
+          <div>
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view_fields' -->
+<!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-fields.html.twig' -->
+
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view_field' -->
+<!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+<div class="post-block small">
+      <div class="post-image">
+            <a href="https://bit.ly/3zTiOq8" target="_blank">
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+<img src="" width="150" height="100" alt="ZBM20 Buffer Modules" typeof="Image" data-src="/sites/default/files/styles/image_150x100/public/advertisements/New%20Project%20%2845%29_0.jpg?itok=m-2ZCmIM" class="unveil-image" />
+
+
+
+
+
+
+
+
+
+
+
+</a>
+      </div>
+      <div class="post-content">
+             <div class="post-title"> <a href="https://bit.ly/3zTiOq8" target="_blank">ZBM20 Buffer Modules</a> </div>
+              <div class="post-meta"><span class="post-created "></span></div>
+             <div class="post-body"><p>The ZBM20 provides 380 ms additional hold-up time at up to 448 W</p></div>
+       </div>
+</div>
+<!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+
+<!-- END OUTPUT from 'core/modules/views/templates/views-view-fields.html.twig' -->
+
+</div>
+        </div>
+            <div class="item-columns">
+          <div>
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view_fields' -->
+<!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-fields.html.twig' -->
+
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view_field' -->
+<!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+<div class="post-block small">
+      <div class="post-image">
+            <a href="https://bit.ly/3yfJtwW" target="_blank">
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+<img src="" width="150" height="100" alt="KSC Series Ultra-Long-Life Tactile Switches" typeof="Image" data-src="/sites/default/files/styles/image_150x100/public/advertisements/New%20Project%20%2846%29_0.jpg?itok=H_M-jiM7" class="unveil-image" />
+
+
+
+
+
+
+
+
+
+
+
+</a>
+      </div>
+      <div class="post-content">
+             <div class="post-title"> <a href="https://bit.ly/3yfJtwW" target="_blank">KSC Series Ultra-Long-Life Tactile Switches</a> </div>
+              <div class="post-meta"><span class="post-created "></span></div>
+             <div class="post-body"><p>C&amp;K offers its KSC series of tactile switches which are designed to withstand intensive use</p></div>
+       </div>
+</div>
+<!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+
+<!-- END OUTPUT from 'core/modules/views/templates/views-view-fields.html.twig' -->
+
+</div>
+        </div>
+            <div class="item-columns">
+          <div>
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view_fields' -->
+<!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-fields.html.twig' -->
+
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view_field' -->
+<!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+<div class="post-block small">
+      <div class="post-image">
+            <a href="https://bit.ly/3h5JoFI" target="_blank">
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+<img src="" width="150" height="100" alt="FF01 Series Emergency Stop Switches" typeof="Image" data-src="/sites/default/files/styles/image_150x100/public/advertisements/New%20Project%20%2848%29.jpg?itok=qwiryHGy" class="unveil-image" />
+
+
+
+
+
+
+
+
+
+
+
+</a>
+      </div>
+      <div class="post-content">
+             <div class="post-title"> <a href="https://bit.ly/3h5JoFI" target="_blank">FF01 Series Emergency Stop Switches</a> </div>
+              <div class="post-meta"><span class="post-created "></span></div>
+             <div class="post-body"><p>FF01 Series Low-Profile Pull and Twist E-Stop Switch with Wire Leads</p></div>
+       </div>
+</div>
+<!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+
+<!-- END OUTPUT from 'core/modules/views/templates/views-view-fields.html.twig' -->
+
+</div>
+        </div>
+            <div class="item-columns">
+          <div>
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view_fields' -->
+<!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-fields.html.twig' -->
+
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view_field' -->
+<!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+<div class="post-block small">
+      <div class="post-image">
+            <a href="https://bit.ly/3ybkUAy" target="_blank">
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+<img src="" width="150" height="100" alt="ABP2 Series Board-Mount Pressure Sensors" typeof="Image" data-src="/sites/default/files/styles/image_150x100/public/advertisements/New%20Project%20%2847%29_0.jpg?itok=SDkAtuX0" class="unveil-image" />
+
+
+
+
+
+
+
+
+
+
+
+</a>
+      </div>
+      <div class="post-content">
+             <div class="post-title"> <a href="https://bit.ly/3ybkUAy" target="_blank">ABP2 Series Board-Mount Pressure Sensors</a> </div>
+              <div class="post-meta"><span class="post-created "></span></div>
+             <div class="post-body"><p>ABP2 Series Board-Mount Pressure Sensors: small footprint, liquid media capable</p></div>
+       </div>
+</div>
+<!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+
+<!-- END OUTPUT from 'core/modules/views/templates/views-view-fields.html.twig' -->
+
+</div>
+        </div>
+            <div class="item-columns">
+          <div>
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view_fields' -->
+<!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-fields.html.twig' -->
+
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view_field' -->
+<!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+<div class="post-block small">
+      <div class="post-image">
+            <a href="https://bit.ly/2UJue0c" target="_blank">
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+<img src="" width="150" height="100" alt="BergStak® Board-to-Board Connectors" typeof="Image" data-src="/sites/default/files/styles/image_150x100/public/advertisements/New%20Project%20%2850%29.jpg?itok=9ludng-v" class="unveil-image" />
+
+
+
+
+
+
+
+
+
+
+
+</a>
+      </div>
+      <div class="post-content">
+             <div class="post-title"> <a href="https://bit.ly/2UJue0c" target="_blank">BergStak Board-to-Board Connectors</a> </div>
+              <div class="post-meta"><span class="post-created "></span></div>
+             <div class="post-body"><p>The FCI Basics Bergstak® board-to-board product family is one of the most popular connector series</p></div>
+       </div>
+</div>
+<!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+
+<!-- END OUTPUT from 'core/modules/views/templates/views-view-fields.html.twig' -->
+
+</div>
+        </div>
+            <div class="item-columns">
+          <div>
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view_fields' -->
+<!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-fields.html.twig' -->
+
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view_field' -->
+<!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+<div class="post-block small">
+      <div class="post-image">
+            <a href="https://bit.ly/3wa56wC" target="_blank">
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+<img src="" width="150" height="100" alt="ix Industrial™ IP20 Connectors" typeof="Image" data-src="/sites/default/files/styles/image_150x100/public/advertisements/New%20Project%20%2851%29.jpg?itok=lz5jCmne" class="unveil-image" />
+
+
+
+
+
+
+
+
+
+
+
+</a>
+      </div>
+      <div class="post-content">
+             <div class="post-title"> <a href="https://bit.ly/3wa56wC" target="_blank">ix Industrial™ IP20 Connectors</a> </div>
+              <div class="post-meta"><span class="post-created "></span></div>
+             <div class="post-body"><p>Amphenol ICC's ix Industrial IP20 connectors are 10 position connectors with PoE capability</p></div>
+       </div>
+</div>
+<!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+
+<!-- END OUTPUT from 'core/modules/views/templates/views-view-fields.html.twig' -->
+
+</div>
+        </div>
+      </div>
+    
+</div>
+
+<!-- END OUTPUT from 'modules/gavias_view/templates/views-view-gvagrid.html.twig' -->
+
+
+    
+
+  
+  
+
+  
+  
+</div>
+
+<!-- END OUTPUT from 'core/modules/views/templates/views-view.html.twig' -->
+
+</div>
+
+<!-- END OUTPUT from 'core/modules/system/templates/container.html.twig' -->
+
+
+    </div>
+  </div>
+
+<!-- END OUTPUT from 'themes/gavias_kama/templates/block/block.html.twig' -->
+
+
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'block' -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--intelcybermedia.html.twig
+   * block--block-content--81dacbdf-7528-4afc-bbde-e30955bba2a5.html.twig
+   * block--block-content.html.twig
+   * block--block-content.html.twig
+   x block.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/gavias_kama/templates/block/block.html.twig' -->
+<div class="block block-block-content block-block-content81dacbdf-7528-4afc-bbde-e30955bba2a5 no-title">
+  
+    
+      <div class="content block-content">
+      
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   * field--block-content--body--basic.html.twig
+   * field--block-content--body.html.twig
+   * field--block-content--basic.html.twig
+   * field--body.html.twig
+   * field--text-with-summary.html.twig
+   x field.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/gavias_kama/templates/fields/field.html.twig' -->
+
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item"><div style="margin-left: 10px;"><p><a href="https://bit.ly/3rE9cuW" rel="nofollow" target="_blank"><img alt="PCBWay" data-entity-type="file" data-entity-uuid="79a825cf-7099-4887-9a3a-9a09136f3507" src="/sites/default/files/PCBA-300x250.jpg" /></a></p></div></div>
+      
+<!-- END OUTPUT from 'themes/gavias_kama/templates/fields/field.html.twig' -->
+
+
+    </div>
+  </div>
+
+<!-- END OUTPUT from 'themes/gavias_kama/templates/block/block.html.twig' -->
+
+
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'block' -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--7pcbad.html.twig
+   * block--block-content--10610d0a-ffe3-477d-b549-8a27c7619a84.html.twig
+   * block--block-content.html.twig
+   * block--block-content.html.twig
+   x block.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/gavias_kama/templates/block/block.html.twig' -->
+<div class="block block-block-content block-block-content10610d0a-ffe3-477d-b549-8a27c7619a84 no-title">
+  
+    
+      <div class="content block-content">
+      
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   * field--block-content--body--basic.html.twig
+   * field--block-content--body.html.twig
+   * field--block-content--basic.html.twig
+   * field--body.html.twig
+   * field--text-with-summary.html.twig
+   x field.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/gavias_kama/templates/fields/field.html.twig' -->
+
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item"><div style="margin-left: 10px;"><p><a href="https://www.7pcb.com/" rel="nofollow" target="_blank"><img alt="7PCB Banner" data-entity-type="file" data-entity-uuid="e771cc6f-b39c-4e15-ab25-7498e6a1aa3b" src="/sites/default/files/inline-images/300x250-1.gif" /></a></p>
+</div></div>
+      
+<!-- END OUTPUT from 'themes/gavias_kama/templates/fields/field.html.twig' -->
+
+
+    </div>
+  </div>
+
+<!-- END OUTPUT from 'themes/gavias_kama/templates/block/block.html.twig' -->
+
+
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'block' -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--ourpcbbanner-2.html.twig
+   * block--block-content--707b0c13-f545-4884-8991-cae22d1dccc4.html.twig
+   * block--block-content.html.twig
+   * block--block-content.html.twig
+   x block.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/gavias_kama/templates/block/block.html.twig' -->
+<div class="block block-block-content block-block-content707b0c13-f545-4884-8991-cae22d1dccc4 no-title">
+  
+    
+      <div class="content block-content">
+      
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   * field--block-content--body--basic.html.twig
+   * field--block-content--body.html.twig
+   * field--block-content--basic.html.twig
+   * field--body.html.twig
+   * field--text-with-summary.html.twig
+   x field.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/gavias_kama/templates/fields/field.html.twig' -->
+
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item"><div style="margin-left: 10px;">
+<p><a href="https://www.ourpcb.com/pcb-assembly" rel="nofollow" target="_blank"><img alt="OurPCB Banner" data-entity-type="file" data-entity-uuid="dc737996-59ed-41ec-b652-214d4647ee2c" src="/sites/default/files/inline-images/our2%286%29.gif" /></a></p>
+
+</div></div>
+      
+<!-- END OUTPUT from 'themes/gavias_kama/templates/fields/field.html.twig' -->
+
+
+    </div>
+  </div>
+
+<!-- END OUTPUT from 'themes/gavias_kama/templates/block/block.html.twig' -->
+
+
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'block' -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--views-block---re-sidebar-widgets-blog-recent-posts.html.twig
+   * block--views-block---re-sidebar-widgets-block-on-bottom-right-box-blog-recent-posts.html.twig
+   * block--views-block.html.twig
+   * block--views.html.twig
+   x block.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/gavias_kama/templates/block/block.html.twig' -->
+<div class="views-element-container block block-views block-views-block-re-sidebar-widgets-block-on-bottom-right-box-blog-recent-posts">
+  
+      <h2 class="block-title" ><span>Latest Posts</span></h2>
+    
+      <div class="content block-content">
+      
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'container' -->
+<!-- BEGIN OUTPUT from 'core/modules/system/templates/container.html.twig' -->
+<div>
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view' -->
+<!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view.html.twig' -->
+<div class="js-view-dom-id-b2b0a84b879a9961f8eba03486cf700768bfea9edeb0b09e230b59b074778177">
+  
+  
+  
+
+  
+  
+  
+
+  
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view_gvagrid' -->
+<!-- BEGIN OUTPUT from 'modules/gavias_view/templates/views-view-gvagrid.html.twig' -->
+<div class="gva-view-grid">
+   
+  
+  <div class="gva-view-grid-inner lg-block-grid-1 md-block-grid-1 sm-block-grid-1 xs-block-grid-1">
+
+            <div class="item-columns">
+          <div>
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view_fields' -->
+<!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-fields.html.twig' -->
+
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view_field' -->
+<!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'image_formatter' -->
+<!-- BEGIN OUTPUT from 'themes/gavias_kama/templates/fields/image-formatter.html.twig' -->
+
+
+<figure role="group">
+  <a href="/news/new-power-bipolar-transistors-from-mjd-series-with-fast-switching-speeds-and-high-reliability-performance">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'image_style' -->
+<!-- BEGIN OUTPUT from 'core/modules/image/templates/image-style.html.twig' -->
+
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'image' -->
+<!-- BEGIN OUTPUT from 'core/modules/system/templates/image.html.twig' -->
+<img src="" width="620" height="420" alt="Power Bipolar Transistors from MJD Series" typeof="foaf:Image" data-src="/sites/default/files/styles/image_620x420/public/components/MJD-Series-Image.jpg?itok=ZVdGWQup" class="unveil-image" />
+
+<!-- END OUTPUT from 'core/modules/system/templates/image.html.twig' -->
+
+
+
+<!-- END OUTPUT from 'core/modules/image/templates/image-style.html.twig' -->
+
+</a>
+<figcaption>Power Bipolar Transistors from MJD Series</figcaption>
+</figure>
+
+<!-- END OUTPUT from 'themes/gavias_kama/templates/fields/image-formatter.html.twig' -->
+
+
+<!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+<h3>
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view_field' -->
+<!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+<a href="/news/new-power-bipolar-transistors-from-mjd-series-with-fast-switching-speeds-and-high-reliability-performance" hreflang="en">New Power Bipolar Transistors from MJD Series with Fast Switching Speeds and High Reliability Performance</a>
+<!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+</h3>
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view_field' -->
+<!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+<hr />
+<br />
+<!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+
+<!-- END OUTPUT from 'core/modules/views/templates/views-view-fields.html.twig' -->
+
+</div>
+        </div>
+            <div class="item-columns">
+          <div>
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view_fields' -->
+<!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-fields.html.twig' -->
+
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view_field' -->
+<!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'image_formatter' -->
+<!-- BEGIN OUTPUT from 'themes/gavias_kama/templates/fields/image-formatter.html.twig' -->
+
+
+<figure role="group">
+  <a href="/news/fully-encapsulated-acdc-power-supplies-from-tmw-series-for-medical-household-and-industrial-applications">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'image_style' -->
+<!-- BEGIN OUTPUT from 'core/modules/image/templates/image-style.html.twig' -->
+
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'image' -->
+<!-- BEGIN OUTPUT from 'core/modules/system/templates/image.html.twig' -->
+<img src="" width="620" height="420" alt="Fully Encapsulated AC/DC Power Supplies" typeof="foaf:Image" data-src="/sites/default/files/styles/image_620x420/public/components/TMW-Series.jpg?itok=Xr34P7r3" class="unveil-image" />
+
+<!-- END OUTPUT from 'core/modules/system/templates/image.html.twig' -->
+
+
+
+<!-- END OUTPUT from 'core/modules/image/templates/image-style.html.twig' -->
+
+</a>
+<figcaption>Fully Encapsulated AC/DC Power Supplies</figcaption>
+</figure>
+
+<!-- END OUTPUT from 'themes/gavias_kama/templates/fields/image-formatter.html.twig' -->
+
+
+<!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+<h3>
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view_field' -->
+<!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+<a href="/news/fully-encapsulated-acdc-power-supplies-from-tmw-series-for-medical-household-and-industrial-applications" hreflang="en">Fully Encapsulated AC/DC Power Supplies from TMW Series for Medical, Household, and Industrial Applications</a>
+<!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+</h3>
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view_field' -->
+<!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+<hr />
+<br />
+<!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+
+<!-- END OUTPUT from 'core/modules/views/templates/views-view-fields.html.twig' -->
+
+</div>
+        </div>
+            <div class="item-columns">
+          <div>
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view_fields' -->
+<!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-fields.html.twig' -->
+
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view_field' -->
+<!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'image_formatter' -->
+<!-- BEGIN OUTPUT from 'themes/gavias_kama/templates/fields/image-formatter.html.twig' -->
+
+
+<figure role="group">
+  <a href="/news/rac05-kpd3h-series-5w-class-ii-acdc-converter-series-with-protection-against-short-circuits-and-over-voltage">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'image_style' -->
+<!-- BEGIN OUTPUT from 'core/modules/image/templates/image-style.html.twig' -->
+
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'image' -->
+<!-- BEGIN OUTPUT from 'core/modules/system/templates/image.html.twig' -->
+<img src="" width="620" height="420" alt="RAC05-K/PD3/H AC/DC Converter Series" typeof="foaf:Image" data-src="/sites/default/files/styles/image_620x420/public/components/Converter-Series.jpg?itok=sM6hiVka" class="unveil-image" />
+
+<!-- END OUTPUT from 'core/modules/system/templates/image.html.twig' -->
+
+
+
+<!-- END OUTPUT from 'core/modules/image/templates/image-style.html.twig' -->
+
+</a>
+<figcaption>RAC05-K/PD3/H AC/DC Converter Series</figcaption>
+</figure>
+
+<!-- END OUTPUT from 'themes/gavias_kama/templates/fields/image-formatter.html.twig' -->
+
+
+<!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+<h3>
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view_field' -->
+<!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+<a href="/news/rac05-kpd3h-series-5w-class-ii-acdc-converter-series-with-protection-against-short-circuits-and-over-voltage" hreflang="en">RAC05-K/PD3/H Series: 5W Class II AC/DC Converter Series with Protection Against Short Circuits and Over-Voltage</a>
+<!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+</h3>
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view_field' -->
+<!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+<hr />
+<br />
+<!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+
+<!-- END OUTPUT from 'core/modules/views/templates/views-view-fields.html.twig' -->
+
+</div>
+        </div>
+      </div>
+    
+</div>
+
+<!-- END OUTPUT from 'modules/gavias_view/templates/views-view-gvagrid.html.twig' -->
+
+
+    
+
+  
+  
+
+  
+  
+</div>
+
+<!-- END OUTPUT from 'core/modules/views/templates/views-view.html.twig' -->
+
+</div>
+
+<!-- END OUTPUT from 'core/modules/system/templates/container.html.twig' -->
+
+
+    </div>
+  </div>
+
+<!-- END OUTPUT from 'themes/gavias_kama/templates/block/block.html.twig' -->
+
+
+  </div>
+
+<!-- END OUTPUT from 'core/modules/system/templates/region.html.twig' -->
+
+
+				</div>
+			</div>
+				<!-- End Sidebar Right -->
+		
+	</div>
+</div>
+
+
+			</div>
+		</div>			
+	</div>
+
+	
+
+	 
+
+
+	
+<script type="text/javascript">
+
+	console.log(window.location.href);
+	if(document.getElementById('div-gpt-ad-1625818544655-0').style['display']!='none' && $('#div-gpt-ad-1625818544655-0').attr('data-google-query-id')  && document.getElementById('div-gpt-ad-1625818497950-0').style['display']!='none' && $('#div-gpt-ad-1625818497950-0').attr('data-google-query-id')){
+		$('#div-gpt-ad-1625818497950-0, #div-gpt-ad-1625818544655-0').show();
+	}
+	
+	var distanceFromTop_3 = 60;
+	
+ 	$(window).scroll(function() {
+    var distanceFromTop_4 = $(this).scrollTop();
+	
+	var scrollBottom = $(document).height() - $(window).height() - $(window).scrollTop();
+	var distanceFromTop_6 = distanceFromTop_3- $(window).scrollTop();
+	var distanceFromTop_1 = $('header').offset().top;
+	console.log(scrollBottom );
+	distanceFromTop_7 = scrollBottom-400;
+
+    if (distanceFromTop_4 > distanceFromTop_3 ) { 
+			$('#div-gpt-ad-1625818497950-0, #div-gpt-ad-1625818544655-0').css({"position":"fixed","top":"60px"});
+    } else  {
+        	$('#div-gpt-ad-1625818497950-0, #div-gpt-ad-1625818544655-0').css({"position":"fixed","top":"0"});
+    }
+  });
+	
+</script>
+<style>
+@media only screen and (max-width:1360px){ 
+   #div-gpt-ad-1625818497950-0, #div-gpt-ad-1625818544655-0{display:none;}
+}
+</style>
+<footer id="footer" class="footer">
+  
+     
+   <div class="footer-center">
+      <div class="container">      
+         <div class="row">
+                          
+                                              
+              
+                                              
+              
+                                              
+              
+                                               
+
+              
+                                                             
+                              <div class="footer-4col col-lg-3 col-md-3 col-md-6 col-xs-12 column">
+                  
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'region' -->
+<!-- FILE NAME SUGGESTIONS:
+   * region--footer-first.html.twig
+   x region.html.twig
+-->
+<!-- BEGIN OUTPUT from 'core/modules/system/templates/region.html.twig' -->
+  <div>
+    
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'block' -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--about-footer.html.twig
+   * block--block-content--7c942d4c-223c-4814-a192-a118c3f7e4b8.html.twig
+   * block--block-content.html.twig
+   * block--block-content.html.twig
+   x block.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/gavias_kama/templates/block/block.html.twig' -->
+<div class="block block-block-content block-block-content7c942d4c-223c-4814-a192-a118c3f7e4b8 no-title">
+  
+    
+      <div class="content block-content">
+      
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   * field--block-content--body--basic.html.twig
+   * field--block-content--body.html.twig
+   * field--block-content--basic.html.twig
+   * field--body.html.twig
+   * field--text-with-summary.html.twig
+   x field.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/gavias_kama/templates/fields/field.html.twig' -->
+
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item"><p> </p>
+
+<p><img alt="Components101 logo" data-entity-type="file" data-entity-uuid="9e1f3702-eee6-4330-aa21-e663f229af2c" src="/sites/default/files/inline-images/components101_logo_1.png" /></p>
+
+<p>Components101 is a resource dedicated for electronics design engineers, covering product news, analysis and articles on latest electronics components. </p></div>
+      
+<!-- END OUTPUT from 'themes/gavias_kama/templates/fields/field.html.twig' -->
+
+
+    </div>
+  </div>
+
+<!-- END OUTPUT from 'themes/gavias_kama/templates/block/block.html.twig' -->
+
+
+  </div>
+
+<!-- END OUTPUT from 'core/modules/system/templates/region.html.twig' -->
+
+
+                </div> 
+              
+                              <div class="footer-4col col-lg-3 col-md-3 col-md-6 col-xs-12 column">
+                  
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'region' -->
+<!-- FILE NAME SUGGESTIONS:
+   * region--footer-second.html.twig
+   x region.html.twig
+-->
+<!-- BEGIN OUTPUT from 'core/modules/system/templates/region.html.twig' -->
+  <div>
+    
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'block' -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--importantlinks.html.twig
+   * block--block-content--c3c2b69a-960c-4195-a3e0-cc2e7101eb4f.html.twig
+   * block--block-content.html.twig
+   * block--block-content.html.twig
+   x block.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/gavias_kama/templates/block/block.html.twig' -->
+<div class="block block-block-content block-block-contentc3c2b69a-960c-4195-a3e0-cc2e7101eb4f">
+  
+      <h2 class="block-title" ><span>Important Links</span></h2>
+    
+      <div class="content block-content">
+      
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   * field--block-content--body--basic.html.twig
+   * field--block-content--body.html.twig
+   * field--block-content--basic.html.twig
+   * field--body.html.twig
+   * field--text-with-summary.html.twig
+   x field.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/gavias_kama/templates/fields/field.html.twig' -->
+
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item"><div>
+<div class="block block-block-content block-block-contentf68ff84d-6af0-4c49-8b85-ae338addc541 no-title" id="block-gavias-kama-linkfooter">
+<div class="content block-content">
+
+<ul class="menu">
+	<li><a href="/contact">Contact</a></li>
+	<li><a href="/contact/advertise">Advertise</a></li>
+	<li><a href="/privacy-policy">Privacy Policy</a></li>
+	<li><a href="/cookie-policy">Cookie Policy</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+</div>
+      
+<!-- END OUTPUT from 'themes/gavias_kama/templates/fields/field.html.twig' -->
+
+
+    </div>
+  </div>
+
+<!-- END OUTPUT from 'themes/gavias_kama/templates/block/block.html.twig' -->
+
+
+  </div>
+
+<!-- END OUTPUT from 'core/modules/system/templates/region.html.twig' -->
+
+
+                </div> 
+              
+                              <div class="footer-4col col-lg-3 col-md-3 col-md-6 col-xs-12 column">
+                  
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'region' -->
+<!-- FILE NAME SUGGESTIONS:
+   * region--footer-third.html.twig
+   x region.html.twig
+-->
+<!-- BEGIN OUTPUT from 'core/modules/system/templates/region.html.twig' -->
+  <div>
+    
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'block' -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--views-block--tagadelic-content-block-1.html.twig
+   * block--views-block--tagadelic-content-block-1.html.twig
+   * block--views-block.html.twig
+   * block--views.html.twig
+   x block.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/gavias_kama/templates/block/block.html.twig' -->
+<div class="views-element-container block block-views block-views-blocktagadelic-content-block-1">
+  
+      <h2 class="block-title" ><span>Popular Tags</span></h2>
+    
+      <div class="content block-content">
+      
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'container' -->
+<!-- BEGIN OUTPUT from 'core/modules/system/templates/container.html.twig' -->
+<div>
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view' -->
+<!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view.html.twig' -->
+<div class="js-view-dom-id-f93ad363add672ae79f8b9547a147301fd70b05fbdf0e4d511d092ee606d710b">
+  
+  
+  
+
+  
+  
+  
+
+  
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view_grid' -->
+<!-- BEGIN OUTPUT from 'themes/gavias_kama/templates/views/views-view-grid.html.twig' -->
+
+            
+
+    <div class="views-view-grid horizontal cols-1 clearfix">
+            
+              <div class="views-row row clearfix row-1">
+        
+
+                  <div class="views-col col-1 col-lg-12 col-md-12 col-sm-12 col-xs-12" style="width: 100%;">
+            
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view_fields' -->
+<!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-fields.html.twig' -->
+<div class="views-field views-field-field-blog-tags"><div class="field-content">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view_field' -->
+<!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+<a href="/tags/new-product" hreflang="en">New Product</a>
+<!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+</div></div>
+<!-- END OUTPUT from 'core/modules/views/templates/views-view-fields.html.twig' -->
+
+
+          </div>
+              
+              </div>
+        
+          
+              <div class="views-row row clearfix row-2">
+        
+
+                  <div class="views-col col-1 col-lg-12 col-md-12 col-sm-12 col-xs-12" style="width: 100%;">
+            
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view_fields' -->
+<!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-fields.html.twig' -->
+<div class="views-field views-field-field-blog-tags"><div class="field-content">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view_field' -->
+<!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+<a href="/tags/power-electronics" hreflang="en">Power Electronics</a>
+<!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+</div></div>
+<!-- END OUTPUT from 'core/modules/views/templates/views-view-fields.html.twig' -->
+
+
+          </div>
+              
+              </div>
+        
+          
+              <div class="views-row row clearfix row-3">
+        
+
+                  <div class="views-col col-1 col-lg-12 col-md-12 col-sm-12 col-xs-12" style="width: 100%;">
+            
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view_fields' -->
+<!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-fields.html.twig' -->
+<div class="views-field views-field-field-blog-tags"><div class="field-content">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view_field' -->
+<!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+<a href="/tags/automotive" hreflang="en">Automotive</a>
+<!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+</div></div>
+<!-- END OUTPUT from 'core/modules/views/templates/views-view-fields.html.twig' -->
+
+
+          </div>
+              
+              </div>
+        
+          
+              <div class="views-row row clearfix row-4">
+        
+
+                  <div class="views-col col-1 col-lg-12 col-md-12 col-sm-12 col-xs-12" style="width: 100%;">
+            
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view_fields' -->
+<!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-fields.html.twig' -->
+<div class="views-field views-field-field-blog-tags"><div class="field-content">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view_field' -->
+<!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+<a href="/tags/iot" hreflang="en">IoT</a>
+<!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+</div></div>
+<!-- END OUTPUT from 'core/modules/views/templates/views-view-fields.html.twig' -->
+
+
+          </div>
+              
+              </div>
+        
+          
+              <div class="views-row row clearfix row-5">
+        
+
+                  <div class="views-col col-1 col-lg-12 col-md-12 col-sm-12 col-xs-12" style="width: 100%;">
+            
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view_fields' -->
+<!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-fields.html.twig' -->
+<div class="views-field views-field-field-blog-tags"><div class="field-content">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view_field' -->
+<!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+<a href="/tags/mosfet" hreflang="en">MOSFET</a>
+<!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+</div></div>
+<!-- END OUTPUT from 'core/modules/views/templates/views-view-fields.html.twig' -->
+
+
+          </div>
+              
+              </div>
+        
+          
+              <div class="views-row row clearfix row-6">
+        
+
+                  <div class="views-col col-1 col-lg-12 col-md-12 col-sm-12 col-xs-12" style="width: 100%;">
+            
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view_fields' -->
+<!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-fields.html.twig' -->
+<div class="views-field views-field-field-blog-tags"><div class="field-content">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view_field' -->
+<!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+<a href="/tags/sensors" hreflang="en">Sensors</a>
+<!-- END OUTPUT from 'core/modules/views/templates/views-view-field.html.twig' -->
+
+</div></div>
+<!-- END OUTPUT from 'core/modules/views/templates/views-view-fields.html.twig' -->
+
+
+          </div>
+              
+              </div>
+        
+      </div>
+<!-- END OUTPUT from 'themes/gavias_kama/templates/views/views-view-grid.html.twig' -->
+
+
+    
+
+  
+  
+
+  
+  
+</div>
+
+<!-- END OUTPUT from 'core/modules/views/templates/views-view.html.twig' -->
+
+</div>
+
+<!-- END OUTPUT from 'core/modules/system/templates/container.html.twig' -->
+
+
+    </div>
+  </div>
+
+<!-- END OUTPUT from 'themes/gavias_kama/templates/block/block.html.twig' -->
+
+
+  </div>
+
+<!-- END OUTPUT from 'core/modules/system/templates/region.html.twig' -->
+
+
+                </div> 
+              
+                              <div class="footer-4col col-lg-3 col-md-3 col-md-6 col-xs-12 column">
+                  
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'region' -->
+<!-- FILE NAME SUGGESTIONS:
+   * region--footer-four.html.twig
+   x region.html.twig
+-->
+<!-- BEGIN OUTPUT from 'core/modules/system/templates/region.html.twig' -->
+  <div>
+    
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'block' -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--newslettersignup.html.twig
+   * block--block-content--d852237c-60c5-497f-ab15-65d24ec174f0.html.twig
+   * block--block-content.html.twig
+   * block--block-content.html.twig
+   x block.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/gavias_kama/templates/block/block.html.twig' -->
+<div class="block block-block-content block-block-contentd852237c-60c5-497f-ab15-65d24ec174f0">
+  
+      <h2 class="block-title" ><span>Subscribe to Our Newsletter</span></h2>
+    
+      <div class="content block-content">
+      
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   * field--block-content--body--basic.html.twig
+   * field--block-content--body.html.twig
+   * field--block-content--basic.html.twig
+   * field--body.html.twig
+   * field--text-with-summary.html.twig
+   x field.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/gavias_kama/templates/fields/field.html.twig' -->
+
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item"><!-- Begin Mailchimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css">
+<style type="text/css">
+	/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div>
+<form action="https://circuitdigest.us19.list-manage.com/subscribe/post?u=7831027c963ad1778e5688a40&amp;id=c04f684e84" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+<div>	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true">
+<input type="text" name="b_7831027c963ad1778e5688a40_c04f684e84" tabindex="-1" value=""></div>
+    <div class="form-actions js-form-wrapper form-wrapper"><input style="background-color: #CD2122; font-size: 13px; margin-top: 8px; padding: 2px 6px;" type="submit" value="Subscribe" name="subscribe" id="edit-subscribe" name="op" value="Subscribe" class="button js-form-submit form-submit"/></div>
+    </div>
+</form>
+</div>
+
+<!--End mc_embed_signup--></div>
+      
+<!-- END OUTPUT from 'themes/gavias_kama/templates/fields/field.html.twig' -->
+
+
+    </div>
+  </div>
+
+<!-- END OUTPUT from 'themes/gavias_kama/templates/block/block.html.twig' -->
+
+
+  </div>
+
+<!-- END OUTPUT from 'core/modules/system/templates/region.html.twig' -->
+
+
+                </div> 
+                       </div>   
+      </div>
+   </div>   
+  
+  
+      <div class="copyright">
+      <div class="container">
+        <div class="copyright-inner">
+            
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'region' -->
+<!-- FILE NAME SUGGESTIONS:
+   * region--copyright.html.twig
+   x region.html.twig
+-->
+<!-- BEGIN OUTPUT from 'core/modules/system/templates/region.html.twig' -->
+  <div>
+    
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'block' -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--copyright-message.html.twig
+   * block--block-content--dcc92698-f200-4c2e-af9b-c5fa06bf60bd.html.twig
+   * block--block-content.html.twig
+   * block--block-content.html.twig
+   x block.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/gavias_kama/templates/block/block.html.twig' -->
+<div class="block block-block-content block-block-contentdcc92698-f200-4c2e-af9b-c5fa06bf60bd no-title">
+  
+    
+      <div class="content block-content">
+      
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'field' -->
+<!-- FILE NAME SUGGESTIONS:
+   * field--block-content--body--basic.html.twig
+   * field--block-content--body.html.twig
+   * field--block-content--basic.html.twig
+   * field--body.html.twig
+   * field--text-with-summary.html.twig
+   x field.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/gavias_kama/templates/fields/field.html.twig' -->
+
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item"><div>Copyright 2021 © Components101. All rights reserved</div></div>
+      
+<!-- END OUTPUT from 'themes/gavias_kama/templates/fields/field.html.twig' -->
+
+
+    </div>
+  </div>
+
+<!-- END OUTPUT from 'themes/gavias_kama/templates/block/block.html.twig' -->
+
+
+  </div>
+
+<!-- END OUTPUT from 'core/modules/system/templates/region.html.twig' -->
+
+
+        </div>   
+      </div>   
+   </div>
+  <div class="return-top default hidden-xs"><i class="fa fa-angle-up"></i></div>
+ <div id="gva-popup-ajax" class="clearfix"><div class="pajax-content"><a href="javascript:void(0);" class="btn-close"><i class="fa fa-times"></i></a><div class="gva-popup-ajax-content clearfix"></div></div></div>
+</footer>
+
+
+	
+</div>
+
+
+<!-- END OUTPUT from 'themes/gavias_kama/templates/page/page.html.twig' -->
+
+
+  </div>
+
+<!-- END OUTPUT from 'core/modules/system/templates/off-canvas-page-wrapper.html.twig' -->
+
+
+    
+    <script src="/core/assets/vendor/jquery-once/jquery.once.min.js?v=2.2.0"></script>
+<script src="/libraries/colorbox/jquery.colorbox-min.js?v=8.7.7"></script>
+<script src="/modules/colorbox/js/colorbox.js?v=8.7.7"></script>
+<script src="/modules/colorbox/styles/default/colorbox_style.js?v=8.7.7"></script>
+<script src="/modules/colorbox_inline/js/colorbox_inline.js?qx5vzw"></script>
+<script src="/core/modules/statistics/statistics.js?v=8.7.7"></script>
+<script src="/modules/custom_module/js/welcome_wallpaper.js?v=1.x"></script>
+<script src="/modules/gavias_slider/vendor/jquery-migrate.min.js?v=1.x"></script>
+<script src="/modules/gavias_slider/vendor/slick/slick.js?v=1.x"></script>
+<script src="/modules/gavias_slider/vendor/ytplayer/js/jquery.mb.YTPlayer.min.js?v=1.x"></script>
+<script src="/modules/gavias_slider/vendor/main.js?v=1.x"></script>
+<script src="/themes/gavias_kama/vendor/gallery/jquery.mobile.customized.min.js?v=8.7.7"></script>
+<script src="/themes/gavias_kama/vendor/gallery/jquery.easing.1.3.js?v=8.7.7"></script>
+<script src="/themes/gavias_kama/vendor/gallery/camera.js?v=8.7.7"></script>
+<script src="/themes/gavias_kama/vendor/gallery/main.js?v=8.7.7"></script>
+<script src="/modules/gva_blockbuilder/vendor/skrollr.min.js?v=1.x"></script>
+<script src="/modules/gva_blockbuilder/vendor/main.js?v=1.x"></script>
+
+    	<script async>(function(s,u,m,o,j,v){j=u.createElement(m);v=u.getElementsByTagName(m)[0];j.async=1;j.src=o;j.dataset.sumoSiteId='d83d4af71f6bb49c44af760187383f433b919a2e9b0099c84a51c04ef4126e82';v.parentNode.insertBefore(j,v)})(window,document,'script','//load.sumo.com/');</script>
+	
+  </body>
+</html>
+
+<!-- END OUTPUT from 'themes/gavias_kama/templates/page/html.html.twig' -->
+
