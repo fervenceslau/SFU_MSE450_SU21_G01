@@ -1,6 +1,11 @@
 # MSE450_SU21_G01
 Repository for the MSE450/750 course work
 
+## Group Members
+- Bilal Nurhusien
+- Fernando Isensee
+- Jason Epp
+
 # Simulator Game Project
 ## Corona
 Based on the game Space Impact. Project files can be found in the Space Impact directory.
