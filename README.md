@@ -6,7 +6,7 @@ Repository for the MSE450/750 course work
 - Fernando Isensee
 - Jason Epp
 
-# Simulator Game Project
+# Simulated Videogame Project
 ## Corona
 Based on the game Space Impact. Project files can be found in the Space Impact directory.
 
