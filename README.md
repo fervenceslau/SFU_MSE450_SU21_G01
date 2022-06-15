@@ -1,4 +1,4 @@
-# MSE450_SU21_G01
+# MSE750_SU21_G01
 Repository for the MSE450/750 course work
 
 ## Group Members
