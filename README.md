@@ -7,6 +7,8 @@ Repository for the MSE450/750 course work
 - Jason Epp
 
 # Simulated Videogame Project
+A simulated video game project based on Space Impact using the Tiva™ C Series board with a TM4C123GH6PM 32-bit Arm Cortex-M4F microcontroller and the Keil Embedded Development Tools for Arm.
+
 ## Corona
 Based on the game Space Impact. Project files can be found in the Space Impact directory.
 
